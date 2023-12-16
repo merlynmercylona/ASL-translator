@@ -1,5 +1,5 @@
 # ASL-translator
-American Sign language translator
+An application to translate American Sign Language into standard English text. 
 
 The goal of this project was to build a sign language translator. That is, an application capable of interpreting the actions made by one user in video form, and translating that to text. We used the American Sign language for this purpose, to interpret alphabets.
 
@@ -19,6 +19,8 @@ The jupyter notebook contains the code for final model used and F1 scores for va
 The asl_abc video depict the model in action, on an youtube video (https://www.youtube.com/watch?v=pDfnf96qz_4)
 
 ### Results: 
+* Training accuarcy: 99%
+* Test accuracy: 60%
 The convolution model achieved 99% accuracy, while the test accuracy was lower, around 60%. On analysing the cause we found that, the dataset used to train the model was perfectly thresholded, to classify the hand action from the background, and our method to threshold the live camera feed, was not as accurate.
   
 ### Learnings: 
